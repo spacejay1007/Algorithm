@@ -12,3 +12,27 @@ function solution(s) {
 
   return number === 0 ? true : false;
 }
+
+// 1
+function numPY(s) {
+  //함수를 완성하세요
+  return (
+    s.toUpperCase().split("P").length === s.toUpperCase().split("Y").length
+  );
+}
+
+// 2
+function numPY(s) {
+  return s.match(/p/gi).length == s.match(/y/gi).length;
+}
+
+// 3
+function solution(s) {
+  return [...s.toLowerCase()].reduce((acc, cur) => {
+    if (cur === "p") return acc + 1;
+    else if (cur === "y") return acc - 1;
+    return acc;
+  }, 0)
+    ? false
+    : true;
+}
