@@ -1,7 +1,8 @@
 // 연속된 부분 수열의 합
 
 function SumOfSuccessive(seq, k) {
-  return;
+  console.log();
+  // return;
 }
 
 SumOfSuccessive([1, 2, 3, 4, 5], 7); // [2,3]
